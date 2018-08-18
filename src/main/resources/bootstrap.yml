@@ -1,6 +1,9 @@
 spring:
   application:
     name: ninja-inventory-service
+  cloud:
+    config:
+      uri: http://127.0.0.1:60090
 
 eureka:
   client:

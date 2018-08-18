@@ -1,1 +1,1 @@
-./mvnw spring-boot:run -Dserver.port=60011
+./mvnw spring-boot:run -Dspring.profiles.active=dev -Dserver.port=60011
