@@ -12,14 +12,13 @@ public class InventoryService {
     public List<Product> getAll() {
         log.info("Retrieving all products...");
         return Arrays.asList(
-                Product.builder()
-                        .name("iPhone 8")
-                        .quantity(30)
-                        .build(),
-                Product.builder()
-                        .name("Google Nexus")
-                        .quantity(10)
-                        .build());
+                new Product("iPhone 8", 30),
+                new Product("Google Nexus", 10),
+                new Product("HiVi M10", 11),
+                new Product("Bose SoundLink Mini 2", 12),
+                new Product("Aux", 13),
+                new Product("Nongfu Spring 4*5L", 14),
+                new Product("Logitech M570", 2));
     }
 
 }
